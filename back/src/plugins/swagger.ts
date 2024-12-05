@@ -44,16 +44,7 @@ const swaggerOpts: SwaggerOptions = {
     ],
     // consumes: ["application/json"],
     // produces: ["application/json"],
-    tags: [
-      {
-        name: "auth",
-        description: "Endpoints para autenticación..",
-      },
-      {
-        name: "usuarios",
-        description: "Endpoints para CRUD de usuarios.",
-      },
-    ],
+    tags: [],
   },
   hideUntagged: true,
   //   exposeRoute: true,

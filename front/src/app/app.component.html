@@ -3,11 +3,17 @@
 @for (gato of this.gatitosList; track $index) {
   <div style="padding-top: 2rem">
     <h4>
-      <b for="nombre">{{ gato.nombre }}</b>
+      @if ($index === 0) {
+        <b for="nombre">{{ gato.nombre }} es un gatito lindo!!!</b>
+      } @else {
+        <b for="nombre">{{ gato.nombre }} es otro gatito muy lindo!!!</b>
+      }
     </h4>
     <label for="raza">Raza: {{ gato.raza }}</label>
     <label for="fechaNacimiento"
       >Fecha de nacimiento: {{ gato.fechaNacimiento }}</label
     >
   </div>
+} @empty {
+  <p style="padding-top: 2rem">No hay ningun gatito en la lista :c</p>
 }
