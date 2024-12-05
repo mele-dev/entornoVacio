@@ -6,16 +6,16 @@ import swaggerui from "@fastify/swagger-ui";
 const swaggerOpts: SwaggerOptions = {
   openapi: {
     info: {
-      title: "API PARCIAL",
+      title: "API REMEDIACION",
       summary:
-        "Summary: Api creado para el parcil 1 de Desarrollo web y mobile.",
-      description: "Api creado para el parcil 1 de Desarrollo web y mobile.",
+        "Summary: Api creada para la remediacion de Desarrollo web y mobile.",
+      description: "Api creado para la remediacion de Desarrollo web y mobile.",
       termsOfService: `http://aca.va.la.url.con.los.terminos.y.condiciones`,
       version: "1.0",
       contact: {
-        name: "JMELNIK",
+        name: "mele-dev",
         url: "http://www.example.com/support",
-        email: "jorge.melnik@ucu.edu.uy",
+        email: "juan.tanca@correo.ucu.edu.uy",
       },
       license: {
         name: "Apache 2.0",
@@ -52,18 +52,6 @@ const swaggerOpts: SwaggerOptions = {
       {
         name: "usuarios",
         description: "Endpoints para CRUD de usuarios.",
-      },
-      {
-        name: "tareas-usuario",
-        description: "Endpoints para CRUD de tareas de un usuario.",
-      },
-      {
-        name: "tareas-asignadas",
-        description: "Endpoints para CRUD de tareas asignadas a un usuario.",
-      },
-      {
-        name: "tareas",
-        description: "Endpoints para CRUD de tareas.",
       },
     ],
   },
