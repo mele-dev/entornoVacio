@@ -1,1 +1,13 @@
+<h1>Listado de gatitos!</h1>
 
+@for (gato of this.gatitosList; track $index) {
+  <div style="padding-top: 2rem">
+    <h4>
+      <b for="nombre">{{ gato.nombre }}</b>
+    </h4>
+    <label for="raza">Raza: {{ gato.raza }}</label>
+    <label for="fechaNacimiento"
+      >Fecha de nacimiento: {{ gato.fechaNacimiento }}</label
+    >
+  </div>
+}
